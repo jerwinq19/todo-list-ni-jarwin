@@ -86,7 +86,7 @@ button:hover {
 
      .todo {
           margin: 0px;
-          padding: 2rem;
+          padding: 2rem; 
      }
      
      .container {
@@ -98,7 +98,9 @@ button:hover {
           font-size: 1.8em;
      }
 
-
+     .myTodo li {
+          font-size: 1.3rem;
+     }
 
      span {
           display: flex;
