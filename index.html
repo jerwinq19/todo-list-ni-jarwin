@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Todo List ni jerwin</title>
-     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list ni jerwin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <h1>To-do ni Jarwin</h1>
 
-     <div class="container">
-          <h1>To-do List ni jerwin</h1>
+    <div class="todo-body">
+        <div class="cont">
+            <input type="text" id="inputs">
+            <button id="btn">Add Task</button>
+        </div>
 
-          <span>
-               <input type="text" id="add" placeholder="Add your todo list here">
-
-               <button id="addBtn" onclick="myFunc()">Add a task</button>
-          </span>
-
-     </div>
-
-     <div class="todo">
-          <h1>Your task</h1>
-          <ul class="myTodo" id="itemList">
-          </ul>
-     </div>
-     <script src="script.js"></script>
+        <ul id="taskList" class="taskList">
+            
+        </ul>
+        <button id="delete-all">Delete All</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
