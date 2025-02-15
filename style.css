@@ -36,6 +36,7 @@ body {
     list-style: none;
     padding: 10px 15px;
     color: white;
+    word-break: break-all;
 }
 
 .taskList {
@@ -53,7 +54,12 @@ body {
 
 .cont {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
+}
+
+.cont input {
+    width: 100%;
 }
 
 .cont input, .cont button, .todo-body button{
