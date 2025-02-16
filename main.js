@@ -9,7 +9,7 @@ addBtn.addEventListener('click', () => {
     let inputValue = userInput.value.trim()
 
     if (inputValue === "") {
-        return alert("please put a type")
+        return alert("please enter a task...")
     }
 
 
@@ -43,6 +43,9 @@ addBtn.addEventListener('click', () => {
 })
 
 deleteAll.addEventListener('click', () => {
+    if (taskList.innerHTML === "") {
+        return alert("it's already empty...")
+    }
+
     taskList.innerHTML = ''
-    
 })

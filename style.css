@@ -24,6 +24,7 @@ body {
     background-color:white;
     padding: 2rem;
     border-radius: 20px;
+    width: 60%;
 }
 
 .taskList li{
@@ -79,11 +80,30 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
+    body {
+        text-align: center;
+        gap: 20px;
+    }
     .todo-body {
         padding: 1rem;
+        width: 100%;
     }
 
     .cont input, .cont button, .todo-body button {
         padding: 5px 10px;
+    }
+
+    .taskList li{
+        font-size: 0.8rem;
+        background-color: red;
+        gap: 1rem;
+    }
+
+    .taskList button {
+        font-size: 0.7rem;
+    }
+
+    .taskList span {
+        text-align: justify;        
     }
 }
